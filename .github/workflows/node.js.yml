@@ -18,8 +18,8 @@ jobs:
         node-version: [20.10.0]
     env:
       BASE_URL: ${{secrets.BASE_URL}}
+      TEST: ${{secrets.TEST}}
     
-
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}

@@ -5,6 +5,7 @@ export async function GET(req: NextRequest) {
     try {
         const val = process.env.BASE_URL
         const test = process.env.TEST
+        console.log(test)
         return NextResponse.json({ success: true, message: "Token saved successfully",data:[val,test] }, { status: 200 });
     } catch (error) {
         console.error(error);
