@@ -19,6 +19,7 @@ jobs:
     env:
       BASE_URL: ${{secrets.BASE_URL}}
       TEST: ${{secrets.TEST}}
+      BRO: ${{secrets.BRO}}
     
     steps:
     - uses: actions/checkout@v4
